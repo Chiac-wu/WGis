@@ -1,0 +1,93 @@
+QComboBox {
+    background: transparent; 
+    border: 1px solid gray; 
+    border-radius: 2px;
+	color: #f0f0f0;
+	border-color: #606060;
+	background-color: #454545;
+	height: 25px;
+}
+QComboBox:focus {
+	border-color: #1473e7;
+}
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 15px;
+    border-left-width: 1px;
+    border-left-color: #606060;
+    border-left-style: solid;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    background: #454545;
+}
+QComboBox::down-arrow {
+    width: 15px;/* 下拉箭头的宽度（建议与下拉框drop-down的宽度一致） */
+    background: transparent;/* 下拉箭头的的背景色 */
+    padding: 0px 0px 0px 0px;/* 上内边距、右内边距、下内边距、左内边距 */
+    image: url(:/images/slider_arrow_down.png);
+}
+QComboBox QAbstractItemView {
+    color: #000000;
+    height: 25px;
+    background-color: #FFFFFF; /* 整个下拉窗体的背景色 */
+    selection-color: #FFFFFF;/*下拉框选中项字体颜色*/
+    selection-background-color:#1473e7;/* 下拉框选中项的背景色 */
+}
+/* 下拉后，整个下拉窗体每项的样式 */
+QComboBox QAbstractItemView::item {
+    height: 20px;   /* 项的高度（设置pComboBox->setView(new QListView());后，该项才起作用） */
+	/*background-color: rgb(237, 242, 255);*/
+
+}
+QComboBox:disabled {
+	color: #545454;
+}
+
+QLineEdit {
+	height: 25px;
+	border-width:1px;
+	border-radius:2px;
+	font-size:16px;
+	color:white;
+	background-color: #454545;
+	border:1px solid gray;
+}
+QLineEdit:focus{
+	border: 1px solid #1473e7;
+}
+QLineEdit:disabled {
+	color: #545454;
+}
+
+QPushButton {
+	height: 25px;
+	border-radius: 2px;
+	border: 1px solid #666666;
+	background-color: #454545;
+}
+QPushButton:disabled {
+	color: #545454;
+}
+
+QGroupBox {
+	border: 1px solid #3e3e3e;
+	color: #B2B2B2;
+}
+
+QLabel {
+	color: #FFFFFF;
+}
+
+QProgressBar{
+	font:9pt;
+	border-radius:2px;
+	text-align:center;
+	border:1px solid #E8EDF2;
+	background-color: #535353;
+	border-color: rgb(180, 180, 180);
+}
+QProgressBar:chunk{
+	border-radius:2px;
+	background-color:#b4b4b4;
+}

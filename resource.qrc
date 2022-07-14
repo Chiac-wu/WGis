@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/eye_on.png</file>
+        <file>images/eye_off.png</file>
+        <file>images/folder-open.png</file>
+        <file>images/algo1.png</file>
+        <file>images/guanbi.png</file>
+        <file>images/zuidahua.png</file>
+        <file>images/zuixiaohua.png</file>
+        <file>images/slider_arrow_down.png</file>
+        <file>images/slider_arrow_up.png</file>
+        <file>qss/main.qss</file>
+        <file>images/algo2.png</file>
+    </qresource>
+</RCC>
